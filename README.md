@@ -40,14 +40,14 @@
 
 - interface and objects
 
-```
-interface Person {
-  first: string;
-  last: string;
-}
+  ```
+  interface Person {
+    first: string;
+    last: string;
+  }
 
-const personNew: Person = {
-  first: "Omkar",
-  last: "Ambure",
-};
-```
+  const personNew: Person = {
+    first: "Omkar",
+    last: "Ambure",
+  };
+  ```
