@@ -40,3 +40,13 @@ const ids: Record<number, string> = {
 };
 
 ids[30] = "c";
+
+//loops in ts
+
+for (let i: number = 0; i < 3; i++) {
+  console.log(i);
+}
+
+[11, 22, 33].forEach((num: number) => console.log(num));
+
+const out: number[] = [110, 220, 330].map((num: number) => num + 2);
