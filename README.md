@@ -92,3 +92,16 @@
   console.log(addTwoNumbers(2, 3));
   console.log(addStrings("Onkar", "Ambure"));
   ```
+
+- union in function parameters and function return void
+
+  ```
+  //functions with union type like string or number
+  //in file functions.ts
+  export const format = (title: string, param: string | number): string =>
+    `${title} ${param}`;
+
+  export const printFormat = (title: string, param: string | number): void => {
+    console.log(format(title, param));
+  };
+  ```
