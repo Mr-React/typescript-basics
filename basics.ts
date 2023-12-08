@@ -24,4 +24,12 @@ const myPerson: {
   last: "Ambure",
 };
 
+interface Person {
+  first: string;
+  last: string;
+}
 
+const personNew: Person = {
+  first: "Omkar",
+  last: "Ambure",
+};
