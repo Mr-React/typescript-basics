@@ -33,3 +33,10 @@ const personNew: Person = {
   first: "Omkar",
   last: "Ambure",
 };
+
+const ids: Record<number, string> = {
+  10: "a",
+  20: "b",
+};
+
+ids[30] = "c";
