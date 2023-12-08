@@ -14,3 +14,6 @@ export const format = (title: string, param: string | number): string =>
 export const printFormat = (title: string, param: string | number): void => {
   console.log(format(title, param));
 };
+
+export const fetchData = (url: string): Promise<string> =>
+  Promise.resolve(`Data from ${url}`);

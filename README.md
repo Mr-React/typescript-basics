@@ -105,3 +105,10 @@
     console.log(format(title, param));
   };
   ```
+
+- promises in ts
+
+  ```
+  export const fetchData = (url: string): Promise<string> =>
+  Promise.resolve(`Data from ${url}`);
+  ```
