@@ -78,6 +78,7 @@
 - normal functions and functions with default value and default export, named export and import in ts
 
   ```
+  //in file functions.ts
   function addTwoNumbers(a: number, b: number): number {
   return a + b;
   }
@@ -85,6 +86,7 @@
   export const addStrings = (str1: string, str2: string = ""): string =>
   `${str1} ${str2}`;
 
+  //in file functions-test.ts
   import addTwoNumbers, { addStrings } from "./functions";
 
   console.log(addTwoNumbers(2, 3));
