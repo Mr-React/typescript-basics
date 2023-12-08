@@ -11,7 +11,7 @@
 
 - select variable and ctrl + k + ctrl + i shows variable type
 
-## `#RRGGBB`Important Notes`#RRGGBB`
+## ## ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) Important Notes
 
 1. Typescript only enforces types at compile time
 2. Runtime types checking might be expensive
