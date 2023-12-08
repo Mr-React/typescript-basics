@@ -74,3 +74,11 @@
 
   const out: number[] = [110, 220, 330].map((num: number) => num + 2);
   ```
+
+- normal functions and functions with default value in ts
+
+  ```
+  function addTwoNumbers(a: number, b: number): number {
+  return a + b;
+  }
+  ```
