@@ -6,6 +6,7 @@
 - install typescript using npm install typescript --save-dev command
 - install ts-node using npm install -D ts-node
 - run npx tsc --init command to create tsconfig file for configuration
+- `npx ts-node .\funcs-and-funcs.ts` command to run ts file
 
 ## VS Code Shortcuts
 
@@ -129,4 +130,23 @@
   function introduce(salutation: string, ...names: string[]): string {
     return `${salutation} ${names.join(" ")}`;
   }
+  ```
+
+- function parameters and function params with params
+
+  ```
+  // function parameters
+  export function printToFile(text: string, callback: () => void): void {
+    console.log(text);
+    callback();
+  }
+
+  // function params with params
+  export function arrayMutate(
+    numbers: number[],
+    mutate: (num: number) => number
+  ): number[] {
+    return numbers.map(mutate);
+  }
+    console.log(arrayMutate([1, 2, 3], (num) => num + 2));
   ```
