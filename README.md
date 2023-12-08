@@ -11,6 +11,16 @@
 
 - select variable and ctrl + k + ctrl + i shows variable type
 
+## `#RRGGBB`Important Notes`#RRGGBB`
+
+1. Typescript only enforces types at compile time
+2. Runtime types checking might be expensive
+   ```
+   export function getName(user: { first: string; last: string }): string {
+     return `${user?.first ?? "first"} ${user?.last ?? "last"}`;
+   }
+   ```
+
 ## Typescript with types
 
 - String, number, boolean
