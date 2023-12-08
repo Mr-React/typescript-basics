@@ -15,3 +15,13 @@ console.log(myRegex);
 const names: string[] = userName.split(" ");
 
 const myValues: Array<number> = [1, 2, 3];
+
+const myPerson: {
+  first: string;
+  last: string;
+} = {
+  first: "Onkar",
+  last: "Ambure",
+};
+
+

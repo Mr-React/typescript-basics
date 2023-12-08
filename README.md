@@ -21,7 +21,19 @@
   ```
 
 - regex, array of string, another way of array
+
   ```let myRegex: RegExp = /foo/;
   const names: string[] = userName.split(" ");
   const myValues: Array<number> = [1, 2, 3];
+  ```
+
+- objects in ts
+
+  ```const myPerson: {
+  first: string;
+  last: string;
+  } = {
+  first: "Onkar",
+  last: "Ambure",
+  };
   ```
