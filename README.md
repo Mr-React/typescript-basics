@@ -75,7 +75,7 @@
   const out: number[] = [110, 220, 330].map((num: number) => num + 2);
   ```
 
-- normal functions and functions with default value in ts
+- normal functions and functions with default value and default export, named export and import in ts
 
   ```
   function addTwoNumbers(a: number, b: number): number {
@@ -84,4 +84,9 @@
 
   export const addStrings = (str1: string, str2: string = ""): string =>
   `${str1} ${str2}`;
+
+  import addTwoNumbers, { addStrings } from "./functions";
+
+  console.log(addTwoNumbers(2, 3));
+  console.log(addStrings("Onkar", "Ambure"));
   ```
