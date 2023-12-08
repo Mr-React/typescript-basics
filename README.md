@@ -148,5 +148,21 @@
   ): number[] {
     return numbers.map(mutate);
   }
-    console.log(arrayMutate([1, 2, 3], (num) => num + 2));
+
+  console.log(arrayMutate([1, 2, 3], (num) => num + 2));
+
+  ```
+
+- functions as types
+
+  ```
+  export type MutationFunction = (num: number) => number;
+
+  export function arrayMutateAnother(
+    numbers: number[],
+    mutate: MutationFunction
+  ): number[] {
+    return numbers.map(mutate);
+  }
+
   ```
