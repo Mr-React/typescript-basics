@@ -11,3 +11,7 @@ let myNumber: number = 10;
 let myRegex: RegExp = /foo/;
 
 console.log(myRegex);
+
+const names: string[] = userName.split(" ");
+
+const myValues: Array<number> = [1, 2, 3];

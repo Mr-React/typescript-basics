@@ -10,3 +10,18 @@
 ## VS Code Shortcuts
 
 - select variable and ctrl + k + ctrl + i shows variable type
+
+## Typescript with types
+
+- String, number, boolean
+
+  ```let userName: string = "Onkar";
+  let hasLoggedIn: boolean = true;
+  let myNumber: number = 10;
+  ```
+
+- regex, array of string, another way of array
+  ```let myRegex: RegExp = /foo/;
+  const names: string[] = userName.split(" ");
+  const myValues: Array<number> = [1, 2, 3];
+  ```
