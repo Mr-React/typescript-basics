@@ -112,3 +112,11 @@
   export const fetchData = (url: string): Promise<string> =>
   Promise.resolve(`Data from ${url}`);
   ```
+
+- rest parameters in ts
+
+  ```
+  function introduce(salutation: string, ...names: string[]): string {
+    return `${salutation} ${names.join(" ")}`;
+  }
+  ```

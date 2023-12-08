@@ -15,5 +15,11 @@ export const printFormat = (title: string, param: string | number): void => {
   console.log(format(title, param));
 };
 
+//promises in ts
 export const fetchData = (url: string): Promise<string> =>
   Promise.resolve(`Data from ${url}`);
+
+//rest parameters in ts
+function introduce(salutation: string, ...names: string[]): string {
+  return `${salutation} ${names.join(" ")}`;
+}
