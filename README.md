@@ -22,6 +22,10 @@
    }
    ```
 
+## Challenge Link
+
+  1. [challenge link] (https://gist.github.com/jherr/cd442b46070b39e99dd8bedc9eecff5c)
+
 ## Typescript with types
 
 - String, number, boolean
