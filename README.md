@@ -26,21 +26,24 @@
 
 - String, number, boolean
 
-  ```let userName: string = "Onkar";
+  ```
+  let userName: string = "Onkar";
   let hasLoggedIn: boolean = true;
   let myNumber: number = 10;
   ```
 
 - regex, array of string, another way of array
 
-  ```let myRegex: RegExp = /foo/;
+  ```
+  let myRegex: RegExp = /foo/;
   const names: string[] = userName.split(" ");
   const myValues: Array<number> = [1, 2, 3];
   ```
 
 - objects in ts
 
-  ```const myPerson: {
+  ```
+  const myPerson: {
   first: string;
   last: string;
   } = {
