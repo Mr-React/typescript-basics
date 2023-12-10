@@ -171,3 +171,15 @@
   }
 
   ```
+
+- Returning functions
+
+  ```
+  export type Adder = (num: number) => number;
+  export function createAdder(num: number): Adder {
+    return (val: number) => num + val;
+  }
+
+  const addOne = createAdder(1);
+  console.log(addOne(55));
+  ```
