@@ -7,6 +7,7 @@
 - install ts-node using npm install -D ts-node
 - run npx tsc --init command to create tsconfig file for configuration
 - `npx ts-node .\funcs-and-funcs.ts` command to run ts file
+- npx tsc .\enums.ts command to transpile/ convert ts to js file
 
 ## VS Code Shortcuts
 
@@ -514,4 +515,51 @@
   // Really constant arrays
   const reallyConst = [1, 2, 3] as const;
   // reallyConst[0] = 50; => not going to change bcoz of mark as "as const"
+  ```
+
+- Enums and Literal types in TS(Enums, Literal Types and string literals)
+
+  ```
+  // Enums and Literal types in TS
+
+  // Enums
+  const beforeLoad = "beforeLoad";
+  const loading = "loading";
+  const loaded = "loaded";
+
+  enum LoadingState {
+    beforeLoad = "beforeLoad",
+    loading = "loading",
+    loaded = "loaded",
+  }
+
+  const englishLoadingState = {
+    [LoadingState.beforeLoad]: "Before Load",
+  };
+
+  const isLoading = (state: LoadingState) => state === LoadingState.loading;
+
+  console.log(isLoading(LoadingState.beforeLoad));
+
+  // Literal Types
+
+  function rollDice(dice: 1 | 2 | 3): number {
+    let pip = 0;
+    for (let i = 0; i < dice; i++) {
+      pip = pip + Math.floor(Math.random() * 5) + 1;
+    }
+
+    return pip;
+  }
+
+  console.log(rollDice(2));
+
+  // string literals
+  function sendEventNew(name: "addToCart", data: { productId: number }): void;
+  function sendEventNew(name: "checkout", data: { cartCount: number }): void;
+  function sendEventNew(name: string, data: unknown): void {
+    console.log(`${name}: ${JSON.stringify(data)}`);
+  }
+
+  sendEventNew("addToCart", { productId: 123123 });
   ```
