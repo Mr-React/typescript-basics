@@ -24,7 +24,7 @@
 
 ## Challenge Link
 
-  1. [challenge link](https://gist.github.com/jherr/cd442b46070b39e99dd8bedc9eecff5c)
+1. [challenge link](https://gist.github.com/jherr/cd442b46070b39e99dd8bedc9eecff5c)
 
 ## Typescript with types
 
@@ -242,4 +242,47 @@
   console.log(parseCoordinate(10, 20));
   console.log(parseCoordinate({ x: 50, y: 60 }));
   console.log(parseCoordinate("x: 12,y: 22"));
+  ```
+
+- Optionals in TS (Optional paramter, Non-null Assertion Operator (Postfix !), Optional function calls or callbacks,)
+
+  ```
+  // optional paramter
+  function printIngredient(quantity: string, ingredient: string, extra?: string) {
+    console.log(`${quantity} ${ingredient} ${extra ? `${extra}` : ""}`);
+  }
+
+  printIngredient("1C", "Flour");
+  printIngredient("1C", "Sugar", "Something");
+
+  // optional fields
+  interface User {
+    id: string;
+    info?: {
+      email?: string;
+    };
+  }
+
+  /**
+  * Non-null Assertion Operator (Postfix !)
+  * Just like other type assertions, this doesn’t change the runtime behavior of your code,
+  * so it’s important to only use ! when you know that the value can’t be null or undefined.
+  */
+  function getEmail(user: User): string {
+    if (user.info) {
+      return user.info.email!;
+    }
+
+    return "";
+  }
+
+  function getEmailEasy(user: User): string {
+    return user.info?.email ?? "";
+  }
+
+  // Optional function calls or callbacks
+  function AddWithCallback(x: number, y: number, callbacks?: () => void) {
+    console.log([x, y]);
+    callbacks?.();
+  }
   ```
