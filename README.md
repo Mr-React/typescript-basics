@@ -24,7 +24,7 @@
 
 ## Challenge Link
 
-1. [challenge link](https://gist.github.com/jherr/cd442b46070b39e99dd8bedc9eecff5c)
+1. [Challenge link](https://gist.github.com/jherr/cd442b46070b39e99dd8bedc9eecff5c) [Check challenge_1.ts file](https://github.com/Mr-React/typescript-basics/blob/main/Challenge/challenge_1.ts)
 2. [Check challenge_2.ts file](https://github.com/Mr-React/typescript-basics/blob/main/Challenge/challenge_2.ts)
 
 ## Typescript with types
