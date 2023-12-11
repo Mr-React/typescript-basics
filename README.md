@@ -244,7 +244,7 @@
   console.log(parseCoordinate("x: 12,y: 22"));
   ```
 
-- Optionals in TS (Optional paramter, Non-null Assertion Operator (Postfix !), Optional function calls or callbacks,)
+- Optionals in TS (Optional paramter, Non-null Assertion Operator (Postfix !), Optional function calls or callbacks)
 
   ```
   // optional paramter
